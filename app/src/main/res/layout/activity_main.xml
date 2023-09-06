@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bluebackground"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textSize="25dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="TEMPERATURE CONVERTER"
+        />
+
+    <EditText
+        android:id="@+id/getval"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:hint="Enter value" />
+
+    <TextView
+        android:id="@+id/showans"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="0.0" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit to celsius"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/F2C"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="celsius to Fahrenheit"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/C2F"/>
+
+        <Button
+            android:id="@+id/btnans"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show ans"
+            />
+
+    <Button
+        android:id="@+id/btnagain"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Again" />
+
+    </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
